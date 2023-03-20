@@ -11,33 +11,21 @@ export const Projects = () => {
   const omcs = [
     {
       title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      description: "Statistics",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679320907/fiverr/MicrosoftTeams-image_11_exvjeo.png",
     },
     {
       title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      description: "Dashboard",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679320906/fiverr/MicrosoftTeams-image_13_ttsijk.png",
     },
     {
       title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "OMCS",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      description: "Course Details",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679320907/fiverr/MicrosoftTeams-image_6_wrsfpc.png",
     },
   ];
 
@@ -80,6 +68,27 @@ export const Projects = () => {
     },
   ];
 
+  const hms = [
+    {
+      title: "HMS",
+      description: "About",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679320907/fiverr/MicrosoftTeams-image_7_ujcc3o.png",
+    },
+    {
+      title: "HMS",
+      description: "Doctors",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679323645/fiverr/MicrosoftTeams-image_17_rx0nhn_1_ow1zd9.png",
+    },
+    {
+      title: "HMS",
+      description: "Mailbox",
+      imgUrl:
+        "https://res.cloudinary.com/dcvkhhwth/image/upload/v1679323703/fiverr/MicrosoftTeams-image_3_vy5ahe_1_c8rgqi.png",
+    },
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -107,7 +116,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">TDT</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">HRM</Nav.Link>
+                        <Nav.Link eventKey="third">HMS</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -152,12 +161,21 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Hospital management system (HMS) is a software
+                          application designed to streamline and automate the
+                          administrative and clinical tasks of a hospital or
+                          healthcare facility. The system includes modules for
+                          managing patient records, appointment scheduling,
+                          billing and invoicing, pharmacy inventory management,
+                          and electronic medical records. The aim of HMS is to
+                          improve the efficiency and accuracy of healthcare
+                          services, reduce paperwork, and enhance patient care.
                         </p>
+                        <Row>
+                          {hms.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

@@ -34,7 +34,11 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img
+              style={{ borderRadius: "50%" }}
+              src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/5a9638b48efb32c22590edfed027d342-1678954809156/8cc68300-c335-4448-a57c-8511dac8ec84.png"
+              alt="Logo"
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

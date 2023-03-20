@@ -75,14 +75,14 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Are you looking for expert web and mobile developers to
-                    develop your web or mobile app? If your answer is yes, then
-                    we welcome you and you are at the right place. We are
-                    professional web and mobile developers for 3+ years. We
-                    develop professional web and mobile apps using our skills
-                    and techniques. You can see some of our projects below and
-                    visit our page in Fiverr for more details about the
-                    technologies we use!
+                    Looking for a skilled team of web and mobile developers to
+                    help bring your vision to life? Look no further than us!
+                    With over 3 years of professional experience, our team of
+                    full stack developers has the skills and techniques needed
+                    to develop high-quality web and mobile apps that are
+                    tailored to your unique needs. We have worked on a variety
+                    of exciting projects in the past, and are ready to tackle
+                    whatever challenges your project may present.
                   </p>
                 </div>
               )}
